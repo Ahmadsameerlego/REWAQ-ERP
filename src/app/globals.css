@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #059669;
+  --font-cairo: 'Cairo', sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-cairo);
+  direction: rtl;
+}
+
+/* Custom scrollbar for clean enterprise look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
